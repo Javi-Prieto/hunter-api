@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "a50781bf-e928-4d1b-8acf-8ae072c1e528",
+		"name": "Hunter-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30052758"
+	},
+	"item": [
+		{
+			"name": "Character",
+			"item": [
+				{
+					"name": "CreateCharacter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Killua\",\r\n  \"age\": 15,\r\n  \"nen_type\": \"modifyer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/character",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"character"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllCharacter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/character",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"character"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCharacter",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/character/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"character",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

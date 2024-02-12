@@ -19,4 +19,5 @@ class CharacterDto(BaseModel):
     nen_type: str = Field(...)
 
     class Config:
+        from_attributes = True
         orm_mode = True
